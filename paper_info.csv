@@ -1,0 +1,1487 @@
+cs.AI,"Explainability is a key challenge and a major research theme in AI research
+for developing intelligent systems that are capable of working with humans more
+effectively. An obvious choice in developing explainable intelligent systems
+relies on employing knowledge representation formalisms which are inherently
+tailored towards expressing human knowledge e.g., interrogative agendas. In the
+scope of this work, we focus on formal concept analysis (FCA), a standard
+knowledge representation formalism, to express interrogative agendas, and in
+particular to categorize objects w.r.t. a given set of features. Several
+FCA-based algorithms have already been in use for standard machine learning
+tasks such as classification and outlier detection. These algorithms use a
+single concept lattice for such a task, meaning that the set of features used
+for the categorization is fixed. Different sets of features may have different
+importance in that categorization, we call a set of features an agenda. In many
+applications a correct or good agenda for categorization is not known
+beforehand. In this paper, we propose a meta-learning algorithm to construct a
+good interrogative agenda explaining the data. Such algorithm is meant to call
+existing FCA-based classification and outlier detection algorithms iteratively,
+to increase their accuracy and reduce their sample complexity. The proposed
+method assigns a measure of importance to different set of features used in the
+categorization, hence making the results more explainable."
+cs.AI,"This paper presents a general framework about what is a decision problem. Our
+motivation is related to the fact that decision analysis and operational
+research are structured (as disciplines) around classes of methods, while
+instead we should first characterise the decision problems our clients present
+us. For this purpose we introduce a new framework, independent from any
+existing method, based upon primitives provided by (or elicited from) the
+client. We show that the number of archetypal decision problems are finite and
+so the archetypal decision support methods."
+cs.AI,"Knowledge graphs (KGs) play a crucial role in many applications, such as
+question answering, but incompleteness is an urgent issue for their broad
+application. Much research in knowledge graph completion (KGC) has been
+performed to resolve this issue. The methods of KGC can be classified into two
+major categories: rule-based reasoning and embedding-based reasoning. The
+former has high accuracy and good interpretability, but a major challenge is to
+obtain effective rules on large-scale KGs. The latter has good efficiency and
+scalability, but it relies heavily on data richness and cannot fully use domain
+knowledge in the form of logical rules. We propose a novel method that injects
+rules and learns representations iteratively to take full advantage of rules
+and embeddings. Specifically, we model the conclusions of rule groundings as
+0-1 variables and use a rule confidence regularizer to remove the uncertainty
+of the conclusions. The proposed approach has the following advantages: 1) It
+combines the benefits of both rules and knowledge graph embeddings (KGEs) and
+achieves a good balance between efficiency and scalability. 2) It uses an
+iterative method to continuously improve KGEs and remove incorrect rule
+conclusions. Evaluations on two public datasets show that our method
+outperforms the current state-of-the-art methods, improving performance by
+2.7\% and 4.3\% in mean reciprocal rank (MRR)."
+cs.AI,"Logical reasoning task involves diverse types of complex reasoning over text,
+based on the form of multiple-choice question answering. Given the context,
+question and a set of options as the input, previous methods achieve superior
+performances on the full-data setting. However, the current benchmark dataset
+has the ideal assumption that the reasoning type distribution on the train
+split is close to the test split, which is inconsistent with many real
+application scenarios. To address it, there remain two problems to be studied:
+(1) How is the zero-shot capability of the models (train on seen types and test
+on unseen types)? (2) How to enhance the perception of reasoning types for the
+models? For problem 1, we propose a new benchmark for generalized zero-shot
+logical reasoning, named ZsLR. It includes six splits based on the three type
+sampling strategies. For problem 2, a type-aware model TaCo is proposed. It
+utilizes both the heuristic input reconstruction and the contrastive learning
+to improve the type perception in the global representation. Extensive
+experiments on both the zero-shot and full-data settings prove the superiority
+of TaCo over the state-of-the-art methods. Also, we experiment and verify the
+generalization capability of TaCo on other logical reasoning dataset."
+cs.AI,"Vector-borne diseases (VBDs) are a kind of infection caused through the
+transmission of vectors generated by the bites of infected parasites, bacteria,
+and viruses, such as ticks, mosquitoes, triatomine bugs, blackflies, and
+sandflies. If these diseases are not properly treated within a reasonable time
+frame, the mortality rate may rise. In this work, we propose a set of
+ontologies that will help in the diagnosis and treatment of vector-borne
+diseases. For developing VBD's ontology, electronic health records taken from
+the Indian Health Records website, text data generated from Indian government
+medical mobile applications, and doctors' prescribed handwritten notes of
+patients are used as input. This data is then converted into correct text using
+Optical Character Recognition (OCR) and a spelling checker after
+pre-processing. Natural Language Processing (NLP) is applied for entity
+extraction from text data for making Resource Description Framework (RDF)
+medical data with the help of the Patient Clinical Data (PCD) ontology.
+Afterwards, Basic Formal Ontology (BFO), National Vector Borne Disease Control
+Program (NVBDCP) guidelines, and RDF medical data are used to develop
+ontologies for VBDs, and Semantic Web Rule Language (SWRL) rules are applied
+for diagnosis and treatment. The developed ontology helps in the construction
+of decision support systems (DSS) for the NVBDCP to control these diseases."
+cs.AI,"A major bottleneck in search-based program synthesis is the exponentially
+growing search space which makes learning large programs intractable. Humans
+mitigate this problem by leveraging the compositional nature of the real world:
+In structured domains, a logical specification can often be decomposed into
+smaller, complementary solution programs. We show that compositional
+segmentation can be applied in the programming by examples setting to divide
+the search for large programs across multiple smaller program synthesis
+problems. For each example, we search for a decomposition into smaller units
+which maximizes the reconstruction accuracy in the output under a latent task
+program. A structural alignment of the constituent parts in the input and
+output leads to pairwise correspondences used to guide the program synthesis
+search. In order to align the input/output structures, we make use of the
+Structure-Mapping Theory (SMT), a formal model of human analogical reasoning
+which originated in the cognitive sciences. We show that decomposition-driven
+program synthesis with structural alignment outperforms Inductive Logic
+Programming (ILP) baselines on string transformation tasks even with minimal
+knowledge priors. Unlike existing methods, the predictive accuracy of our agent
+monotonically increases for additional examples and achieves an average time
+complexity of $\mathcal{O}(m)$ in the number $m$ of partial programs for highly
+structured domains such as strings. We extend this method to the complex
+setting of visual reasoning in the Abstraction and Reasoning Corpus (ARC) for
+which ILP methods were previously infeasible."
+cs.AI,"Model transparency, label correlation learning and the robust-ness to label
+noise are crucial for multilabel learning. However, few existing methods study
+these three characteristics simultaneously. To address this challenge, we
+propose the robust multilabel Takagi-Sugeno-Kang fuzzy system (R-MLTSK-FS) with
+three mechanisms. First, we design a soft label learning mechanism to reduce
+the effect of label noise by explicitly measuring the interactions between
+labels, which is also the basis of the other two mechanisms. Second, the
+rule-based TSK FS is used as the base model to efficiently model the inference
+relationship be-tween features and soft labels in a more transparent way than
+many existing multilabel models. Third, to further improve the performance of
+multilabel learning, we build a correlation enhancement learning mechanism
+based on the soft label space and the fuzzy feature space. Extensive
+experiments are conducted to demonstrate the superiority of the proposed
+method."
+cs.AI,"This paper presents a general approach for measuring distances between board
+games within the Ludii general game system. These distances are calculated
+using a previously published set of general board game concepts, each of which
+represents a common game idea or shared property. Our results compare and
+contrast two different measures of distance, highlighting the subjective nature
+of such metrics and discussing the different ways that they can be interpreted."
+cs.AI,"A faithful and interpretable explanation of an AI model's behavior and
+internal structure is a high-level explanation that is human-intelligible but
+also consistent with the known, but often opaque low-level causal details of
+the model. We argue that the theory of causal abstraction provides the
+mathematical foundations for the desired kinds of model explanations. In causal
+abstraction analysis, we use interventions on model-internal states to
+rigorously assess whether an interpretable high-level causal model is a
+faithful description of an AI model. Our contributions in this area are: (1) We
+generalize causal abstraction to cyclic causal structures and typed high-level
+variables. (2) We show how multi-source interchange interventions can be used
+to conduct causal abstraction analyses. (3) We define a notion of approximate
+causal abstraction that allows us to assess the degree to which a high-level
+causal model is a causal abstraction of a lower-level one. (4) We prove
+constructive causal abstraction can be decomposed into three operations we
+refer to as marginalization, variable-merge, and value-merge. (5) We formalize
+the XAI methods of LIME, causal effect estimation, causal mediation analysis,
+iterated nullspace projection, and circuit-based explanations as special cases
+of causal abstraction analysis."
+cs.AI,"Exploring the generalization of a text-to-SQL parser is essential for a
+system to automatically adapt the real-world databases. Previous works provided
+investigations focusing on lexical diversity, including the influence of the
+synonym and perturbations in both natural language questions and databases.
+However, research on the structure variety of database schema~(DS) is
+deficient. Specifically, confronted with the same input question, the target
+SQL is probably represented in different ways when the DS comes to a different
+structure. In this work, we provide in-deep discussions about the structural
+generalization of text-to-SQL tasks. We observe that current datasets are too
+templated to study structural generalization. To collect eligible test data, we
+propose a framework to generate novel text-to-SQL data via automatic and
+synchronous (DS, SQL) pair altering. In the experiments, significant
+performance reduction when evaluating well-trained text-to-SQL models on the
+synthetic samples demonstrates the limitation of current research regarding
+structural generalization. According to comprehensive analysis, we suggest the
+practical reason is the overfitting of (NL, SQL) patterns."
+cs.AI,"Decisions such as which movie to watch next, which song to listen to, or
+which product to buy online, are increasingly influenced by recommender systems
+and user models that incorporate information on users' past behaviours,
+preferences, and digitally created content. Machine learning models that enable
+recommendations and that are trained on user data may unintentionally leverage
+information on human characteristics that are considered vulnerabilities, such
+as depression, young age, or gambling addiction. The use of algorithmic
+decisions based on latent vulnerable state representations could be considered
+manipulative and could have a deteriorating impact on the condition of
+vulnerable individuals. In this paper, we are concerned with the problem of
+machine learning models inadvertently modelling vulnerabilities, and want to
+raise awareness for this issue to be considered in legislation and AI ethics.
+Hence, we define and describe common vulnerabilities, and illustrate cases
+where they are likely to play a role in algorithmic decision-making. We propose
+a set of requirements for methods to detect the potential for vulnerability
+modelling, detect whether vulnerable groups are treated differently by a model,
+and detect whether a model has created an internal representation of
+vulnerability. We conclude that explainable artificial intelligence methods may
+be necessary for detecting vulnerability exploitation by machine learning-based
+recommendation systems."
+cs.AI,"To get a good understanding of a dynamical system, it is convenient to have
+an interpretable and versatile model of it. Timed discrete event systems are a
+kind of model that respond to these requirements. However, such models can be
+inferred from timestamped event sequences but not directly from numerical data.
+To solve this problem, a discretization step must be done to identify events or
+symbols in the time series. Persist is a discretization method that intends to
+create persisting symbols by using a score called persistence score. This
+allows to mitigate the risk of undesirable symbol changes that would lead to a
+too complex model. After the study of the persistence score, we point out that
+it tends to favor excessive cases making it miss interesting persisting
+symbols. To correct this behavior, we replace the metric used in the
+persistence score, the Kullback-Leibler divergence, with the Wasserstein
+distance. Experiments show that the improved persistence score enhances
+Persist's ability to capture the information of the original time series and
+that it makes it better suited for discrete event systems learning."
+cs.AI,"World wide transport authorities are imposing complex Hours of Service
+regulations to drivers, which constraint the amount of working, driving and
+resting time when delivering a service. As a consequence, transport companies
+are responsible not only of scheduling driving plans aligned with laws that
+define the legal behaviour of a driver, but also of monitoring and identifying
+as soon as possible problematic patterns that can incur in costs due to
+sanctions. Transport experts are frequently in charge of many drivers and lack
+time to analyse the vast amount of data recorded by the onboard sensors, and
+companies have grown accustomed to pay sanctions rather than predict and
+forestall wrongdoings. This paper exposes an application for summarising raw
+driver activity logs according to these regulations and for explaining driver
+behaviour in a human readable format. The system employs planning, constraint,
+and clustering techniques to extract and describe what the driver has been
+doing while identifying infractions and the activities that originate them.
+Furthermore, it groups drivers based on similar driving patterns. An
+experimentation in real world data indicates that recurring driving patterns
+can be clustered from short basic driving sequences to whole drivers working
+days."
+cs.AI,"Travel time estimation from GPS trips is of great importance to order
+duration, ridesharing, taxi dispatching, etc. However, the dense trajectory is
+not always available due to the limitation of data privacy and acquisition,
+while the origin destination (OD) type of data, such as NYC taxi data, NYC bike
+data, and Capital Bikeshare data, is more accessible. To address this issue,
+this paper starts to estimate the OD trips travel time combined with the road
+network. Subsequently, a Multitask Weakly Supervised Learning Framework for
+Travel Time Estimation (MWSL TTE) has been proposed to infer transition
+probability between roads segments, and the travel time on road segments and
+intersection simultaneously. Technically, given an OD pair, the transition
+probability intends to recover the most possible route. And then, the output of
+travel time is equal to the summation of all segments' and intersections'
+travel time in this route. A novel route recovery function has been proposed to
+iteratively maximize the current route's co occurrence probability, and
+minimize the discrepancy between routes' probability distribution and the
+inverse distribution of routes' estimation loss. Moreover, the expected log
+likelihood function based on a weakly supervised framework has been deployed in
+optimizing the travel time from road segments and intersections concurrently.
+We conduct experiments on a wide range of real world taxi datasets in Xi'an and
+Chengdu and demonstrate our method's effectiveness on route recovery and travel
+time estimation."
+cs.AI,"Federated medical relation extraction enables multiple clients to train a
+deep network collaboratively without sharing their raw medical data. In order
+to handle the heterogeneous label distribution across clients, most of the
+existing works only involve enforcing regularization between local and global
+models during optimization. In this paper, we fully utilize the models of all
+clients and propose a novel concept of \textit{major classifier vectors}, where
+a group of class vectors is obtained in an ensemble rather than the weighted
+average method on the server. The major classifier vectors are then distributed
+to all clients and the local training of each client is Contrasted with Major
+Classifier vectors (FedCMC), so the local model is not prone to overfitting to
+the local label distribution. FedCMC requires only a small amount of additional
+transfer of classifier parameters without any leakage of raw data, extracted
+representations, and label distributions. Our extensive experiments show that
+FedCMC outperforms the other state-of-the-art FL algorithms on three medical
+relation extraction datasets."
+cs.AI,"With the ever-increasing boom of Cryptocurrency, detecting fraudulent
+behaviors and associated malicious addresses draws significant research effort.
+However, most existing studies still rely on the full history features or
+full-fledged address transaction networks, thus cannot meet the requirements of
+early malicious address detection, which is urgent but seldom discussed by
+existing studies. To detect fraud behaviors of malicious addresses in the early
+stage, we present Evolve Path Tracer, which consists of Evolve Path Encoder
+LSTM, Evolve Path Graph GCN, and Hierarchical Survival Predictor. Specifically,
+in addition to the general address features, we propose asset transfer paths
+and corresponding path graphs to characterize early transaction patterns.
+Further, since the transaction patterns are changing rapidly during the early
+stage, we propose Evolve Path Encoder LSTM and Evolve Path Graph GCN to encode
+asset transfer path and path graph under an evolving structure setting.
+Hierarchical Survival Predictor then predicts addresses' labels with nice
+scalability and faster prediction speed. We investigate the effectiveness and
+versatility of Evolve Path Tracer on three real-world illicit bitcoin datasets.
+Our experimental results demonstrate that Evolve Path Tracer outperforms the
+state-of-the-art methods. Extensive scalability experiments demonstrate the
+model's adaptivity under a dynamic prediction setting."
+cs.AI,"The XAI literature is decentralized, both in terminology and in publication
+venues, but recent years saw the community converge around keywords that make
+it possible to more reliably discover papers automatically. We use keyword
+search using the SemanticScholar API and manual curation to collect a
+well-formatted and reasonably comprehensive set of 5199 XAI papers, available
+at https://github.com/alonjacovi/XAI-Scholar . We use this collection to
+clarify and visualize trends about the size and scope of the literature,
+citation trends, cross-field trends, and collaboration trends. Overall, XAI is
+becoming increasingly multidisciplinary, with relative growth in papers
+belonging to increasingly diverse (non-CS) scientific fields, increasing
+cross-field collaborative authorship, increasing cross-field citation activity.
+The collection can additionally be used as a paper discovery engine, by
+retrieving XAI literature which is cited according to specific constraints (for
+example, papers that are influential outside of their field, or influential to
+non-XAI research)."
+cs.AI,"Detection of news propagation barriers, being economical, cultural,
+political, time zonal, or geographical, is still an open research issue. We
+present an approach to barrier detection in news spreading by utilizing
+Wikipedia-concepts and metadata associated with each barrier. Solving this
+problem can not only convey the information about the coverage of an event but
+it can also show whether an event has been able to cross a specific barrier or
+not. Experimental results on IPoNews dataset (dataset for information spreading
+over the news) reveals that simple classification models are able to detect
+barriers with high accuracy. We believe that our approach can serve to provide
+useful insights which pave the way for the future development of a system for
+predicting information spreading barriers over the news."
+cs.AI,"An important feature of pervasive, intelligent assistance systems is the
+ability to dynamically adapt to the current needs of their users. Hence, it is
+critical for such systems to be able to recognize those goals and needs based
+on observations of the user's actions and state of the environment. In this
+work, we investigate the application of two state-of-the-art, planning-based
+plan recognition approaches in a real-world setting. So far, these approaches
+were only evaluated in artificial settings in combination with agents that act
+perfectly rational. We show that such approaches have difficulties when used to
+recognize the goals of human subjects, because human behaviour is typically not
+perfectly rational. To overcome this issue, we propose an extension to the
+existing approaches through a classification-based method trained on observed
+behaviour data. We empirically show that the proposed extension not only
+outperforms the purely planning-based- and purely data-driven goal recognition
+methods but is also able to recognize the correct goal more reliably,
+especially when only a small number of observations were seen. This
+substantially improves the usefulness of hybrid goal recognition approaches for
+intelligent assistance systems, as recognizing a goal early opens much more
+possibilities for supportive reactions of the system."
+cs.AI,"An abstraction can be used to relate two structural causal models
+representing the same system at different levels of resolution. Learning
+abstractions which guarantee consistency with respect to interventional
+distributions would allow one to jointly reason about evidence across multiple
+levels of granularity while respecting the underlying cause-effect
+relationships. In this paper, we introduce a first framework for causal
+abstraction learning between SCMs based on the formalization of abstraction
+recently proposed by Rischel (2020). Based on that, we propose a differentiable
+programming solution that jointly solves a number of combinatorial
+sub-problems, and we study its performance and benefits against independent and
+sequential approaches on synthetic settings and on a challenging real-world
+problem related to electric vehicle battery manufacturing."
+econ.EM,"This paper examines the dynamics of Tether, the stablecoin with the largest
+market capitalization. We show that the distributional and dynamic properties
+of Tether/USD rates have been evolving from 2017 to 2021. We use local analysis
+methods to detect and describe the local patterns, such as short-lived trends,
+time-varying volatility and persistence. To accommodate these patterns, we
+consider a time varying parameter Double Autoregressive tvDAR(1) model under
+the assumption of local stationarity of Tether/USD rates. We estimate the tvDAR
+model non-parametrically and test hypotheses on the functional parameters. In
+the application to Tether, the model provides a good fit and reliable
+out-of-sample forecasts at short horizons, while being robust to time-varying
+persistence and volatility. In addition, the model yields a simple plug-in
+measure of stability for Tether and other stablecoins for assessing and
+comparing their stability."
+econ.EM,"Non-causal processes have been drawing attention recently in Macroeconomics
+and Finance for their ability to display nonlinear behaviors such as asymmetric
+dynamics, clustering volatility, and local explosiveness. In this paper, we
+investigate the statistical properties of empirical conditional quantiles of
+non-causal processes. Specifically, we show that the quantile autoregression
+(QAR) estimates for non-causal processes do not remain constant across
+different quantiles in contrast to their causal counterparts. Furthermore, we
+demonstrate that non-causal autoregressive processes admit nonlinear
+representations for conditional quantiles given past observations. Exploiting
+these properties, we propose three novel testing strategies of non-causality
+for non-Gaussian processes within the QAR framework. The tests are constructed
+either by verifying the constancy of the slope coefficients or by applying a
+misspecification test of the linear QAR model over different quantiles of the
+process. Some numerical experiments are included to examine the finite sample
+performance of the testing strategies, where we compare different specification
+tests for dynamic quantiles with the Kolmogorov-Smirnov constancy test. The new
+methodology is applied to some time series from financial markets to
+investigate the presence of speculative bubbles. The extension of the approach
+based on the specification tests to AR processes driven by innovations with
+heteroskedasticity is studied through simulations. The performance of QAR
+estimates of non-causal processes at extreme quantiles is also explored."
+econ.EM,"This paper proves a new central limit theorem for a sample that exhibits
+multi-way dependence and heterogeneity across clusters. Statistical inference
+for situations where there is both multi-way dependence and cluster
+heterogeneity has thus far been an open issue. Existing theory for multi-way
+clustering inference requires identical distributions across clusters (implied
+by the so-called separate exchangeability assumption). Yet no such homogeneity
+requirement is needed in the existing theory for one-way clustering. The new
+result therefore theoretically justifies the view that multi-way clustering is
+a more robust version of one-way clustering, consistent with applied practice.
+The result is applied to linear regression, where it is shown that a standard
+plug-in variance estimator is valid for inference."
+econ.EM,"It is customary to estimate error-in-variables models using higher-order
+moments of observables. This moments-based estimator is consistent only when
+the coefficient of the latent regressor is assumed to be non-zero. We develop a
+new estimator based on the divide-and-conquer principle that is consistent for
+any value of the coefficient of the latent regressor. In an application on the
+relation between investment, (mismeasured) Tobin's $q$ and cash flow, we find
+time periods in which the effect of Tobin's $q$ is not statistically different
+from zero. The implausibly large higher-order moment estimates in these periods
+disappear when using the proposed estimator."
+econ.EM,"The overwhelming majority of empirical research that uses cluster-robust
+inference assumes that the clustering structure is known, even though there are
+often several possible ways in which a dataset could be clustered. We propose
+two tests for the correct level of clustering in regression models. One test
+focuses on inference about a single coefficient, and the other on inference
+about two or more coefficients. We provide both asymptotic and wild bootstrap
+implementations. The proposed tests work for a null hypothesis of either no
+clustering or ``fine'' clustering against alternatives of ``coarser''
+clustering. We also propose a sequential testing procedure to determine the
+appropriate level of clustering. Simulations suggest that the bootstrap tests
+perform very well under the null hypothesis and can have excellent power. An
+empirical example suggests that using the tests leads to sensible inferences."
+econ.EM,"We provide computationally attractive methods to obtain jackknife-based
+cluster-robust variance matrix estimators (CRVEs) for linear regression models
+estimated by least squares. We also propose several new variants of the wild
+cluster bootstrap, which involve these CRVEs, jackknife-based bootstrap
+data-generating processes, or both. Extensive simulation experiments suggest
+that the new methods can provide much more reliable inferences than existing
+ones in cases where the latter are not trustworthy, such as when the number of
+clusters is small and/or cluster sizes vary substantially. Three empirical
+examples illustrate the new methods."
+econ.EM,"I introduce a generic method for inference on entire quantile and regression
+quantile processes in the presence of a finite number of large and arbitrarily
+heterogeneous clusters. The method asymptotically controls size by generating
+statistics that exhibit enough distributional symmetry such that randomization
+tests can be applied. The randomization test does not require ex-ante matching
+of clusters, is free of user-chosen parameters, and performs well at
+conventional significance levels with as few as five clusters. The method tests
+standard (non-sharp) hypotheses and can even be asymptotically similar in
+empirically relevant situations. The main focus of the paper is inference on
+quantile treatment effects but the method applies more broadly. Numerical and
+empirical examples are provided."
+econ.EM,"We study causal inference in a setting in which units consisting of pairs of
+individuals (such as married couples) are assigned randomly to one of four
+categories: a treatment targeted at pair member A, a potentially different
+treatment targeted at pair member B, joint treatment, or no treatment. The
+setup includes the important special case in which the pair members are the
+same individual targeted by two different treatments A and B. Allowing for
+endogenous non-compliance, including coordinated treatment takeup, as well as
+interference across treatments, we derive the causal interpretation of various
+instrumental variable estimands using weaker monotonicity conditions than in
+the literature. In general, coordinated treatment takeup makes it difficult to
+separate treatment interaction from treatment effect heterogeneity. We provide
+auxiliary conditions and various bounding strategies that may help zero in on
+causally interesting parameters. As an empirical illustration, we apply our
+results to a program randomly offering two different treatments, namely
+tutoring and financial incentives, to first year college students, in order to
+assess the treatments' effects on academic performance."
+econ.EM,"Robust M-estimation uses loss functions, such as least absolute deviation
+(LAD), quantile loss and Huber's loss, to construct its objective function, in
+order to for example eschew the impact of outliers, whereas the difficulty in
+analysing the resultant estimators rests on the nonsmoothness of these losses.
+Generalized functions have advantages over ordinary functions in several
+aspects, especially generalized functions possess derivatives of any order.
+Generalized functions incorporate local integrable functions, the so-called
+regular generalized functions, while the so-called singular generalized
+functions (e.g. Dirac delta function) can be obtained as the limits of a
+sequence of sufficient smooth functions, so-called regular sequence in
+generalized function context. This makes it possible to use these singular
+generalized functions through approximation. Nevertheless, a significant
+contribution of this paper is to establish the convergence rate of regular
+sequence to nonsmooth loss that answers a call from the relevant literature.
+For parameter estimation where objective function may be nonsmooth, this paper
+first shows as a general paradigm that how generalized function approach can be
+used to tackle the nonsmooth loss functions in Section two using a very simple
+model. This approach is of general interest and applicability. We further use
+the approach in robust M-estimation for additive single-index cointegrating
+time series models; the asymptotic theory is established for the proposed
+estimators. We evaluate the finite-sample performance of the proposed
+estimation method and theory by both simulated data and an empirical analysis
+of predictive regression of stock returns."
+econ.EM,"We revisit conduct parameter estimation in homogeneous goods markets to
+resolve the conflict between Bresnahan (1982) and Perloff and Shen (2012)
+regarding the identification and the accuracy of conduct parameter estimation.
+We point out that the proof of Perloff and Shen (2012) is incorrect and its
+simulation setting is not valid. Our simulation shows that the estimation
+becomes accurate when properly adding demand shifters in the supply estimation
+and increasing the sample size. Therefore, we support Bresnahan (1982)."
+econ.EM,"Evaluating policy in imperfectly competitive markets requires understanding
+firm behavior. While researchers test conduct via model selection and
+assessment, we present advantages of Rivers and Vuong (2002) (RV) model
+selection under misspecification. However, degeneracy of RV invalidates
+inference. With a novel definition of weak instruments for testing, we connect
+degeneracy to instrument strength, derive weak instrument properties of RV, and
+provide a diagnostic for weak instruments by extending the framework of Stock
+and Yogo (2005) to model selection. We test vertical conduct (Villas-Boas,
+2007) using common instrument sets. Some are weak, providing no power. Strong
+instruments support manufacturers setting retail prices."
+econ.EM,"This paper develops a semi-parametric procedure for estimation of
+unconditional quantile partial effects using quantile regression coefficients.
+The estimator is based on an identification result showing that, for continuous
+covariates, unconditional quantile effects are a weighted average of
+conditional ones at particular quantile levels that depend on the covariates.
+We propose a two-step estimator for the unconditional effects where in the
+first step one estimates a structural quantile regression model, and in the
+second step a nonparametric regression is applied to the first step
+coefficients. We establish the asymptotic properties of the estimator, say
+consistency and asymptotic normality. Monte Carlo simulations show numerical
+evidence that the estimator has very good finite sample performance and is
+robust to the selection of bandwidth and kernel. To illustrate the proposed
+method, we study the canonical application of the Engel's curve, i.e. food
+expenditures as a share of income."
+econ.EM,"Many problems ask a question that can be formulated as a causal question:
+""what would have happened if...?"" For example, ""would the person have had
+surgery if he or she had been Black?"" To address this kind of questions,
+calculating an average treatment effect (ATE) is often uninformative, because
+one would like to know how much impact a variable (such as skin color) has on a
+specific individual, characterized by certain covariates. Trying to calculate a
+conditional ATE (CATE) seems more appropriate. In causal inference, the
+propensity score approach assumes that the treatment is influenced by x, a
+collection of covariates. Here, we will have the dual view: doing an
+intervention, or changing the treatment (even just hypothetically, in a thought
+experiment, for example by asking what would have happened if a person had been
+Black) can have an impact on the values of x. We will see here that optimal
+transport allows us to change certain characteristics that are influenced by
+the variable we are trying to quantify the effect of. We propose here a mutatis
+mutandis version of the CATE, which will be done simply in dimension one by
+saying that the CATE must be computed relative to a level of probability,
+associated to the proportion of x (a single covariate) in the control
+population, and by looking for the equivalent quantile in the test population.
+In higher dimension, it will be necessary to go through transport, and an
+application will be proposed on the impact of some variables on the probability
+of having an unnatural birth (the fact that the mother smokes, or that the
+mother is Black)."
+econ.EM,"This paper revisits the identification and estimation of a class of
+semiparametric (distribution-free) panel data binary choice models with lagged
+dependent variables, exogenous covariates, and entity fixed effects. Using an
+""identification at infinity"" argument, we show that the model is point
+identified in the presence of a free-varying continuous covariate. In contrast
+with the celebrated Honore and Kyriazidou (2000), our method permits time
+trends of any form and does not suffer from the ""curse of dimensionality"". We
+propose an easily implementable conditional maximum score estimator. The
+asymptotic properties of the proposed estimator are fully characterized. A
+small-scale Monte Carlo study demonstrates that our approach performs
+satisfactorily in finite samples. We illustrate the usefulness of our method by
+presenting an empirical application to enrollment in private hospital insurance
+using the HILDA survey data."
+econ.EM,"Many economic and causal parameters of interest depend on generated
+regressors, including structural parameters in models with endogenous variables
+estimated by control functions and in models with sample selection. Inference
+with generated regressors is complicated by the very complex expression for
+influence functions and asymptotic variances. To address this problem, we
+propose automatic Locally Robust/debiased GMM estimators in a general setting
+with generated regressors. Importantly, we allow for the generated regressors
+to be generated from machine learners, such as Random Forest, Neural Nets,
+Boosting, and many others. We use our results to construct novel Doubly Robust
+estimators for the Counterfactural Average Structural Function and Average
+Partial Effects in models with endogeneity and sample selection, respectively."
+econ.EM,"We study the effect of treatment on an outcome when parallel trends hold
+conditional on an interactive fixed effects structure. In contrast to the
+majority of the literature, we propose identification using time-varying
+covariates. We assume the untreated outcomes and covariates follow a common
+correlated effects (CCE) model, where the covariates are linear in the same
+common time effects. We then demonstrate consistent estimation of the treatment
+effect coefficients by imputing the untreated potential outcomes in
+post-treatment time periods. Our method accounts for treatment affecting the
+distribution of the control variables and is valid when the number of
+pre-treatment time periods is small. We also decompose the overall treatment
+effect into estimable direct and mediated components."
+econ.EM,"In this paper, we describe a computational implementation of the Synthetic
+difference-in-differences (SDID) estimator of Arkhangelsky et al. (2021) for
+Stata. Synthetic difference-in-differences can be used in a wide class of
+circumstances where treatment effects on some particular policy or event are
+desired, and repeated observations on treated and untreated units are available
+over time. We lay out the theory underlying SDID, both when there is a single
+treatment adoption date and when adoption is staggered over time, and discuss
+estimation and inference in each of these cases. We introduce the sdid command
+which implements these methods in Stata, and provide a number of examples of
+use, discussing estimation, inference, and visualization of results."
+econ.EM,"This paper introduces a maximum likelihood estimator of the value of job
+amenities and labor productivity in a single matching market based on the
+observation of equilibrium matches and wages. The estimation procedure
+simultaneously fits both the matching patterns and the wage curve. While our
+estimator is suited for a wide range of assignment problems, we provide an
+application to the estimation of the Value of a Statistical Life using
+compensating wage differentials for the risk of fatal injury on the job. Using
+US data for 2017, we estimate the Value of Statistical Life at \$ 6.3 million
+(\$2017)."
+econ.EM,"Modeling and predicting extreme movements in GDP is notoriously difficult and
+the selection of appropriate covariates and/or possible forms of nonlinearities
+are key in obtaining precise forecasts. In this paper, our focus is on using
+large datasets in quantile regression models to forecast the conditional
+distribution of US GDP growth. To capture possible non-linearities we include
+several nonlinear specifications. The resulting models will be huge dimensional
+and we thus rely on a set of shrinkage priors. Since Markov Chain Monte Carlo
+estimation becomes slow in these dimensions, we rely on fast variational Bayes
+approximations to the posterior distribution of the coefficients and the latent
+states. We find that our proposed set of models produces precise forecasts.
+These gains are especially pronounced in the tails. Using Gaussian processes to
+approximate the nonlinear component of the model further improves the good
+performance in the tails."
+econ.EM,"Inference on common parameters in panel data models with individual-specific
+fixed effects is a classic example of Neyman and Scott's (1948) incidental
+parameter problem (IPP). One solution to this IPP is functional differencing
+(Bonhomme 2012), which works when the number of time periods T is fixed (and
+may be small), but this solution is not applicable to all panel data models of
+interest. Another solution, which applies to a larger class of models, is
+""large-T"" bias correction (pioneered by Hahn and Kuersteiner 2002 and Hahn and
+Newey 2004), but this is only guaranteed to work well when T is sufficiently
+large. This paper provides a unified approach that connects those two seemingly
+disparate solutions to the IPP. In doing so, we provide an approximate version
+of functional differencing, that is, an approximate solution to the IPP that is
+applicable to a large class of panel data models even when T is relatively
+small."
+math.AC,"Let $(R, \mathfrak m)$ be a one dimensional local Cohen-Macaulay ring. An
+$\mathfrak m$-primary ideal $I$ of $R$ is Elias if the types of $I$ and of
+$R/I$ are equal. Canonical and principal ideals are Elias, and Elias ideals are
+closed under inclusion. We give multiple characterizations of Elias ideals and
+concrete criteria to identify them. We connect Elias ideals to other
+well-studied definitions: Ulrich, $\mathfrak m$-full, integrally closed, trace
+ideals, etc. Applications are given regarding canonical ideals, conductors and
+the Auslander index."
+math.AC,"In this paper, we extend the notion of prime subhypermodules to n-ary
+classical prime, n-ary weakly classical prime and n-ary phi-classical prime
+subhypermodules of an (m,n)-hypermodule over a commutative Krasner
+(m,n)-hyperring. Many properties and characterizations of them are introduced.
+Moreover, we investigate the behavior of these structures under hypermodule
+homomorphisms, quotient hypermodules and cartesian product."
+math.AC,"We study some aspects of distinguished finitely generated modules of finite
+injective dimension. Following Bass' conjecture, this implies that the ring is
+Cohen-Macaulay. We derive some properties of rings from them. Our list of
+properties contains the reduced, domain, normality, and regularity
+(complete-intersection, Gorensteiness, etcetera) of rings."
+math.AC,"For a pair of finitely generated modules $M$ and $N$ over a codimension $c$
+complete intersection ring $R$ with $\ell(M\otimes_RN)$ finite, we pay special
+attention to the inequality $\dim M+\dim N \leq \dim R +c$. In particular, we
+develop an extension of Hochster's theta invariant whose nonvanishing detects
+equality. In addition, we consider a parallel theory where dimension and
+codimension are replaced by depth and complexity, respectively."
+math.AC,"The SFT (for strong finite type) condition was introduced by J. Arnold in the
+context of studying the condition for formal power series rings to have finite
+Krull dimension. In the context of commutative rings, the SFT property is a
+near-Noetherian property that is necessary for a ring of formal power series to
+have finite Krull dimension behavior. In this paper, we explore a
+specialization (and in some sense a more natural) variant of the SFT property
+that we dub the VSFT (for very strong finite type) property. We explore some of
+the fundamental properties of VSFT ideals and rings and compare and contrast
+with the known SFT condition."
+math.AC,"The purpose of this note is to relate certain ring-theoretic properties of
+rings in mixed and positive characteristics that are related to each other by a
+tilting operation used in perfectoid geometry. To this aim, we exploit the
+multiplicative structure of the ``monoidal map"", which is constructed on
+arbitrary $p$-adically complete rings."
+math.AC,"Let $R$ be a Noetherian ring and $x_1,\ldots,x_t$ a permutable regular
+sequence of elements in $R$. Then there exists a finite set of primes $\Lambda$
+and natural number $C$ so that for all $n_1,\ldots,n_t$ there exists a primary
+decomposition $(x_1^{n_1},\ldots,x_t^{n_t})=Q_1\cap \cdots \cap Q_\ell$ so that
+$\sqrt{Q_i}\in \Lambda$ and $\sqrt{Q_i}^{C(n_1+\cdots + n_t)}\subseteq Q_i$ for
+all $1\leq i\leq \ell$."
+math.AC,"Let A be a Noetherian local ring with canonical module K. We characterize A
+when K is a torsionless, reflexive, or q-torsionfree module. If A is a
+Cohen-Macaulay ring, H.-B. Foxby proved in 1974 that the A-module K is
+q-torsionfree if and only if the ring A is q-Gorenstein. With mild assumptions,
+we provide a generalization of Foxby's result to arbitrary Noetherian local
+rings admitting the canonical module. In particular, since the reflexivity of
+the canonical module is closely related to the ring being Gorenstein in low
+codimension, we also explore quasi-normal rings, introduced by W. V.
+Vasconcelos. We provide several examples as well."
+math.AC,"In this note, we prove that a $w$-module $M$ is $w$-Artinian if and only if
+it is $w$-cofinitely generated and for every prime $w$-ideal $\mathfrak{p}$ of
+$R$ with $(0:_RM)\subseteq \mathfrak{p}$, there exists a $w$-submodule
+$N^\mathfrak{p}$ of $M$ such that $(M/N^\mathfrak{p})_w$ is $w$-cofinitely
+generated and $(M[\mathfrak{p}])_w\subseteq N^\mathfrak{p} \subseteq
+(0:_M\mathfrak{p})$, where $M[\mathfrak{p}]=\bigcap\limits_{s\in R \setminus
+\mathfrak{p}}s(0:_M\mathfrak{p}).$ Besides, we show that the $w$-operations are
+semi-star operations rather than star operations in general."
+math.AC,"Free divisors form a celebrated class of hypersurfaces which has been
+extensively studied in the past fifteen years. Our main goal is to introduce
+four new families of homogeneous free divisors and investigate central aspects
+of the blowup algebras of their Jacobian ideals. For instance, for all families
+the Rees algebra and its special fiber are shown to be Cohen-Macaulay -- a
+desirable feature in blowup algebra theory. Moreover, we raise the problem of
+when the analytic spread of the Jacobian ideal of a (not necessarily free)
+polynomial is maximal, and we characterize this property with tools ranging
+from cohomology to asymptotic depth. In addition, as an application, we give an
+ideal-theoretic homological criterion for homaloidal divisors, i.e.,
+hypersurfaces whose polar maps are birational."
+math.AC,"Let $R$ be a commutative Noetherian ring of dimension $d$. In 1973, Eisenbud
+and Evans proposed three conjectures on the polynomial ring $R[T]$. These
+conjectures were settled in the affirmative by Sathaye, Mohan Kumar and
+Plumstead. One of the primary objectives of this article is to investigate the
+validity of these conjectures over Noetherian subrings of $R[T]$ of dimension
+$d+1$, containing $R$. We formulate a class of such rings, which includes
+polynomial rings, Rees algebras, Rees-like algebras and Noetherian symbolic
+Rees algebras, and exhibit that all three conjectures hold for rings belonging
+to this class. Furthermore, for a graded subring $B$ of $R[T]$ containing $R$,
+we improve some existing stability theorems for projective modules over $B$,
+generalizing results due to Bass, Serre and Vaser{\v{s}}te{\u{\i}}n."
+math.AC,"Let $A$ be a symbolic (or an extended symbolic) Rees algebra (need not be
+Noetherian) of dimension $d$. Let $P$ be a finitely generated projective
+$A$-module of rank $\geq$ $d$. Then P has a unimodular element. This improves
+the classical result of Serre for the mentioned class of algebras."
+math.AC,"Let $A$ be a commutative noetherian ring and let $\mathfrak a$ be an ideal of
+$A$. In this paper, we study the cofiniteness of an $A$- module via the
+cofiniteness of its Koszul cohomology modules and vice versa. Moreover, we
+introduce the category $\cK\cM({\bf x},\frak a,A)_{\rm cof}$ consisting of all
+$A$-modules $M$ such that $H^i({\bf x},M)$ is $\frak a$-cofinite for all $i\geq
+0$ and we study the abelianess of this new category."
+math.AC,"We study the Rees algebra of a perfect Gorenstein ideal of codimension 3 in a
+hypersurface ring. We provide a minimal generating set of the defining ideal of
+these rings by introducing a modified Jacobian dual and applying a recursive
+algorithm. Once the defining equations are known, we explore properties of
+these Rees algebras such as Cohen-Macaulayness and Castelnuovo-Mumford
+regularity."
+math.AC,"The Multivariate Hensel Lemma for local rings is usually proved as a
+consequence of the Grothendieck version of Zariski's Main Theorem. This ZMT
+deals with a more general situation that is a priori much more difficult. In
+this paper we give a direct constructive proof of the Multivariate Hensel Lemma
+for ultrametric valuated fields, without using~ZMT. In classical mathematics
+this implies the Lemma for rank-one valued fields."
+math.AC,"In this paper, we introduce the concept of $S$-B\'ezout ring, as a
+generalization of B\'ezout ring. We investigate the relationships between
+$S$-B\'ezout and other related classes of rings. We establish some
+characterizations of $S$-B\'ezout rings. We study this property in various
+contexts of commutative rings including direct product, localization, trivial
+ring extensions and amalgamation rings. Our results allow us to construct new
+original classes of $S$-B\'ezout rings subject to various ring theoretical
+properties. Furthermore, we introduce the notion of nonnil $S$-B\'ezout ring
+and establish some characterizations."
+math.AC,"Every finite local principal ideal ring is the homomorphic image of a
+discrete valuation ring of a number field, and is determined by five
+invariants. We present an action of a group, non-commutative in general, on the
+set of Eisenstein polynomials, of degree matching the ramification index of the
+ring, over the coefficient ring. The action is defined by taking resultants."
+math.AC,"The main aim of this article is to study and develop valuation theory for
+Krasner hyperfields. In analogy with classical valuation theory for fields, we
+generalise the formalism of valuation rings to describe equivalence of
+valuations on hyperfields. After proving basic results and discussing several
+examples, we focus on the valued hyperfields that Krasner originally defined in
+1957. We find that these must have a particular additive structure which in
+turns implies the existence of a valuation a'la Krasner. We note that given
+such a valued hyperfield $(F,v)$, the valuation induced by its additive
+structure does not have to be equivalent to $v$. We discuss the cases in which
+it does."
+math.AC,"We study different form of boundness for ideals of almost Dedekind domains,
+generalizing the notions of critical ideals, radical factorization, and
+SP-domains. We show that every almost Dedekind domain has at least one
+noncritical maximal ideals and, indeed, the set of noncritical maximal ideals
+is dense in the maximal space, with respect to the constructible topology; as a
+consequence, we show that every almost Dedekind domain is SP-scattered, and in
+particular that the group $\mathrm{Inv}(D)$ of invertible ideals of an almost
+Dedekind domain $D$ is always free. If $D$ is an almost Dedekind domain with
+nonzero Jacobson radical, we also show that there is at least one element whose
+ideal function is bounded."
+math.AC,"In the present paper we investigate reflexive modules over the endomorphism
+algebras of reflexive trace ideals in a one-dimensional Cohen-Macaulay local
+ring. The main theorem generalizes both of the results of S. Goto, N. Matsuoka,
+and T. T. Phuong and T. Kobayashi concerning the endomorphism algebra of its
+maximal ideal. We also explore the question of when the category of reflexive
+modules is of finite type, i.e., the base ring has only finitely many
+isomorphism classes of indecomposable reflexive modules. We show that, if the
+category is of finite type, the ring is analytically unramified and has only
+finitely many Ulrich ideals. As a consequence, there are only finitely many
+Ulrich ideals are contained in Arf local rings once the normalization is a
+local ring."
+astro-ph.CO,"The Universe expansion rate is modulated around local inhomogeneities due to
+their gravitational potential. Velocity waves are then observed around galaxy
+clusters in the Hubble diagram. This paper studies them in a ~738 Mpc wide,
+with 2048^3 particles, cosmological simulation of our cosmic environment
+(a.k.a. CLONE: Constrained LOcal & Nesting Environment Simulation). For the
+first time, the simulation shows that velocity waves that arise in the
+lines-of-sight of the most massive dark matter halos agree with those observed
+in local galaxy velocity catalogs in the lines-of-sight of Coma and several
+other local (Abell) clusters. For the best-constrained clusters such as Virgo
+and Centaurus, i.e. those closest to us, secondary waves caused by galaxy
+groups, further into the non-linear regime, also stand out. This match is not
+utterly expected given that before being evolved into a fully non-linear z=0
+state, assuming $\Lambda$CDM, CLONE initial conditions are constrained with
+solely linear theory, power spectrum and highly uncertain and sparse local
+peculiar velocities. Additionally, Gaussian fits to velocity wave envelopes
+show that wave properties are tightly tangled with cluster masses. This link is
+complex though and involves the environment and formation history of the
+clusters. Using machine learning techniques to grasp more thoroughly the
+complex wave-mass relation, velocity waves could in the near future be used to
+provide additional and independent mass estimates from galaxy dynamics within
+large cluster radii."
+astro-ph.CO,"We present cosmological constraints from the Subaru Hyper Suprime-Cam (HSC)
+first-year weak lensing shear catalogue using convolutional neural networks
+(CNNs) and conventional summary statistics. We crop 19
+$3\times3\,\mathrm{{deg}^2}$ sub-fields from the first-year area, divide the
+galaxies with redshift $0.3\le z\le1.5$ into four equally-spaced redshift bins,
+and perform tomographic analyses. We develop a pipeline to generate simulated
+convergence maps from cosmological $N$-body simulations, where we account for
+effects such as intrinsic alignments (IAs), baryons, photometric redshift
+errors, and point spread function errors, to match characteristics of the real
+catalogue. We train CNNs that can predict the underlying parameters from the
+simulated maps, and we use them to construct likelihood functions for Bayesian
+analyses. In the $\Lambda$ cold dark matter model with two free cosmological
+parameters $\Omega_\mathrm{m}$ and $\sigma_8$, we find
+$\Omega_\mathrm{m}=0.278_{-0.035}^{+0.037}$,
+$S_8\equiv(\Omega_\mathrm{m}/0.3)^{0.5}\sigma_8=0.793_{-0.018}^{+0.017}$, and
+the IA amplitude $A_\mathrm{IA}=0.20_{-0.58}^{+0.55}$. In a model with four
+additional free baryonic parameters, we find
+$\Omega_\mathrm{m}=0.268_{-0.036}^{+0.040}$, $S_8=0.819_{-0.024}^{+0.034}$, and
+$A_\mathrm{IA}=-0.16_{-0.58}^{+0.59}$, with the baryonic parameters not being
+well-constrained. We also find that statistical uncertainties of the parameters
+by the CNNs are smaller than those from the power spectrum (5--24 percent
+smaller for $S_8$ and a factor of 2.5--3.0 smaller for $\Omega_\mathrm{m}$),
+showing the effectiveness of CNNs for uncovering additional cosmological
+information from the HSC data. With baryons, the $S_8$ discrepancy between HSC
+first-year data and Planck 2018 is reduced from $\sim2.2\,\sigma$ to
+$0.3\text{--}0.5\,\sigma$."
+astro-ph.CO,"It is argued that the data presented by Hubble Space Telescope and James Webb
+Space Telescope, that seem to be at odds with the canonical big bang cosmology,
+find simple explanation if galaxy formation is seeded by massive primordial
+black holes (PBH), as anticipated in 1993 (A. Dolgov and J. Silk, later DS).
+The statement that the galaxy formation might be seeded by PBH is now
+rediscovered in several works. The predicted by DS log-normal mass spectrum of
+PBHs very well agrees with astronomical data. Abundant BH population of the
+Galaxy with masses of the order of tens solar masses is predicted. Extended
+mass spectrum of PBH together with their possible clustering allows them to
+make 100\% contribution into the cosmological dark matter. Another prediction
+of DS mechanism on noticeable amount of antimatter in the Milky Way also seems
+to be confirmed by the data."
+astro-ph.CO,"Next-generation spectroscopic surveys such as the MegaMapper, MUltiplexed
+Survey Telescope (MUST), MaunaKea Spectroscopic Explorer (MSE), and Wide
+Spectroscopic Telescope (WST) are foreseen to increase the number of
+galaxy/quasar redshifts by an order of magnitude, with hundred millions of
+spectra that will be measured at $z>2$. We perform a Fisher matrix analysis for
+these surveys on the baryonic acoustic oscillation (BAO), the redshift-space
+distortion (RSD) measurement, the non-Gaussianity amplitude $f_{\rm NL}$, and
+the total neutrino mass $M_\nu$. For BAO and RSD parameters, these surveys may
+achieve precision at sub-percent level (<0.5 per cent), representing an
+improvement of factor 10 w.r.t. the latest database. For NG, these surveys may
+reach an accuracy of $\sigma(f_{\rm NL})\sim 1$. They can also put a tight
+constraint on $M_\nu$ with $\sigma(M_\nu) \sim 0.02\,\rm eV$ if we do joint
+analysis with Planck and even $ 0.01\,\rm eV$ if combined with other data. In
+addition, we introduce a general survey model, to derive the cosmic volume and
+number density of tracers, given instrumental facilities and survey strategy.
+Using our Fisher formalism, we can explore (continuously) a wide range of
+survey observational parameters, and propose different survey strategies that
+optimise the cosmological constraints. Fixing the fibre number and survey
+duration, we show that the best strategy for $f_{\rm NL}$ and $M_\nu$
+measurement is to observe large volumes, despite the noise increase. However,
+the strategy differs for the apparent magnitude limit. Finally, we prove that
+increasing the fibre number improves $M_{\nu}$ measurement but not
+significantly $f_{\rm NL}$."
+astro-ph.CO,"Surveys of the matter distribution contain `fossil' information on possible
+non-Gaussianity that is generated in the primordial Universe. This primordial
+signal survives only on the largest scales where cosmic variance is strongest.
+By combining different surveys in a multi-tracer approach, we can suppress the
+cosmic variance and significantly improve the precision on the level of
+primordial non-Gaussianity. We consider a combination of an optical galaxy
+survey, like the recently initiated DESI survey, together with a new and very
+different type of survey, a 21 cm intensity mapping survey, like the upcoming
+SKAO survey. A Fisher forecast of the precision on the local primordial
+non-Gaussianity parameter $f_{\mathrm{NL}}$, shows that this multi-tracer
+combination, together with non-overlap single-tracer information, can deliver
+precision comparable to that from the CMB. Taking account of the largest
+systematic, i.e. foreground contamination in intensity mapping, we find that
+$\sigma(f_{\mathrm{NL}}) \sim 4$."
+astro-ph.CO,"Cross-correlating the data of neutral hydrogen (HI) 21cm intensity mapping
+with galaxy surveys is an effective method to extract astrophysical and
+cosmological information. In this work, we investigate the cross-correlation of
+MeerKAT single-dish mode HI intensity mapping and China Space Station Telescope
+(CSST) spectroscopic galaxy surveys. We simulate a survey area of $\sim 300$
+$\mathrm{deg}^2$ of MeerKAT and CSST surveys at $z=0.5$ using Multi-Dark N-body
+simulation. The PCA algorithm is applied to remove the foregrounds of HI
+intensity mapping, and signal compensation is considered to solve the signal
+loss problem in the HI-galaxy cross power spectrum caused by the foreground
+removal process. We find that from CSST galaxy auto and MeerKAT-CSST cross
+power spectra, the constraint accuracy of the parameter product $\Omega_{\rm
+HI}b_{\rm HI}r_{{\rm HI},g}$ can reach to $\sim1\%$, which is about one order
+of magnitude higher than the current results. After performing the full MeerKAT
+HI intensity mapping survey with 5000 deg$^2$ survey area, the accuracy can be
+enhanced to $<0.3\%$. This implies that the MeerKAT-CSST cross-correlation can
+be a powerful tool to probe the cosmic HI property and the evolution of
+galaxies and the Universe."
+astro-ph.CO,"Filament finders are limited, among other things, by the abundance of
+spectroscopic redshift data. As there are proportionally more photometric
+redshift data than spectroscopic, we aim to use photometric data to improve and
+expand the areas where we can detect the large-scale structure of the Universe.
+We present a proof of concept, showing that the Bisous filament finder can
+improve the detected filamentary network with photometric redshift data. We
+created mock data from the MultiDark-Galaxies catalogue. Galaxies with
+spectroscopic redshifts were given exact positions from the simulation.
+Galaxies with photometric redshifts were given uncertainties along one
+coordinate. The errors were generated with different Gaussian distributions for
+different samples. There are three different types of samples: spectroscopic
+only, photometric only, and mixed samples of galaxies with photometric and
+spectroscopic redshifts. In photometric-only samples, the larger the
+uncertainty for photometric redshifts, the fewer filaments are detected, and
+the filaments strongly align along the line of sight. Using mixed samples
+improves the number of filaments detected and decreases the alignment bias of
+those filaments. The results are compared against the full spectroscopic
+sample. The recall for photometric-only samples depends heavily on the size of
+uncertainty and dropped close to 20%; for mixed samples, the recall stayed
+between 40% and 80%. The false discovery rate stayed below 5% in every sample
+tested in this work. Mixed samples showed better results than corresponding
+photometric-only or spectroscopic-only samples for every uncertainty size and
+number of spectroscopic galaxies in mixed samples. Mixed samples of galaxies
+with photometric and spectroscopic redshifts help us to improve and extend the
+large-scale structure further than possible with only spectroscopic samples."
+astro-ph.CO,"In this series of papers we present an emulator-based halo model for the
+non-linear clustering of galaxies in modified gravity cosmologies. In the first
+paper, we present emulators for the following halo properties: the halo mass
+function, concentration-mass relation and halo-matter cross-correlation
+function. The emulators are trained on data extracted from the \textsc{FORGE}
+and \textsc{BRIDGE} suites of $N$-body simulations, respectively for two
+modified gravity (MG) theories: $f(R)$ gravity and the DGP model, varying three
+standard cosmological parameters $\Omega_{\mathrm{m0}}, H_0, \sigma_8$, and one
+MG parameter, either $\bar{f}_{R0}$ or $r_{\mathrm{c}}$. Our halo property
+emulators achieve an accuracy of $\lesssim 1\%$ on independent test data sets.
+We demonstrate that the emulators can be combined with a galaxy-halo connection
+prescription to accurately predict the galaxy-galaxy and galaxy-matter
+correlation functions using the halo model framework."
+astro-ph.CO,"Weak gravitational lensing is one of the most important probes of the nature
+of dark matter and dark energy. In order to extract cosmological information
+from next-generation weak lensing surveys (e.g., Euclid, Roman, LSST, and CSST)
+as much as possible, accurate measurements of weak lensing shear are required.
+In this work, we present a fully deep-learning-based approach to measuring weak
+lensing shear accurately. Our approach comprises two modules. The first one
+contains a CNN with two branches for taking galaxy images and PSF
+simultaneously, and the output of this module includes the galaxy's magnitude,
+size, and shape. The second module includes a multiple-layer Neural Network to
+calibrate weak lensing shear measurements. We name the program Forklens and
+make it publicly available online. Applying Forklens to CSST-like mock images,
+we achieve consistent accuracy with traditional approaches (such as
+moment-based measurement and forward model fitting) on the sources with high
+signal-to-noise ratios (S/N). For the sources with meagre S/N, Forklens
+exhibits powerful latent denoising ability and offers accurate predictions on
+galaxy shapes. The final shear measurements with Forklens deliver a
+multiplicative bias $m=-0.4\pm3.0\times10^{-3}$ and an additive bias
+$c=-0.5\pm1.9\times10^{-4}$. Our tests with CSST-like simulation show that
+Forklens is competitive with other shear measurement algorithms such as
+Metacalibration, while Forklens can potentially lower the S/N limit. Moreover,
+the whole procedure of Forklens is automated and costs about 0.6 milliseconds
+per galaxy, which is appropriate to adequately take advantage of the sky
+coverage and depth of the upcoming weak lensing surveys."
+astro-ph.CO,"As an exact result required by the Etherington reciprocity theorem, the
+cosmic distance duality relation (CDDR), $\eta(z)=D_L(z)(1+z)^{-2}/D_A(z)=1$
+plays an essential part in modern cosmology. In this paper, we present a new
+method ($\eta(z_i)/\eta(z_j)$) to use the measurements of ultra-compact
+structure in radio quasars (QSO) and the latest observations of type Ia
+supernova (SN Ia) to test CDDR. By taking the observations directly from SN Ia
+and QSOs, one can completely eliminate the uncertainty caused by the
+calibration of the absolute magnitudes of standard candles ($M_B$) and the
+linear sizes of standard rulers ($l_m$). Benefit from the absence of nuisance
+parameters involved in other currently available methods, our analysis
+demonstrates no evidence for the deviation and redshift evolution of CDDR up to
+$z=2.3$. The combination of our methodology and the machine learning Artificial
+Neural Network (ANN) would produce $10^{-3}$ level constraints on the violation
+parameter at high redshifts. Our results indicate perfect agreement between
+observations and predictions, supporting the persisting claims that the
+Etherington reciprocity theorem could still be the best description of our
+universe."
+astro-ph.CO,"Recent work has shown that searches for diffuse radio emission by MeerKAT -
+and eventually the SKA - are well suited to provide some of the strongest
+constraints yet on dark matter annihilations. To make full use of the
+observations by these facilities, accurate simulations of the expected dark
+matter abundance and diffusion mechanisms in these astrophysical objects are
+required. However, because of the computational costs involved, various
+mathematical and numerical techniques have been developed to perform the
+calculations in a feasible manner. Here we provide the first quantitative
+comparison between methods that are commonly used in the literature, and
+outline the applicability of each one in various simulation scenarios. These
+considerations are becoming ever more important as the hunt for dark matter
+continues into a new era of precision radio observations."
+astro-ph.CO,"The introduction of deep wide-field surveys in recent years and the adoption
+of machine learning techniques have led to the discoveries of
+$\mathcal{O}(10^4)$ strong gravitational lensing systems and candidates.
+However, the discovery of multiply lensed transients remains a rarity. Lensed
+transients and especially lensed supernovae are invaluable tools to cosmology
+as they allow us to constrain cosmological parameters via lens modeling and the
+measurements of their time delays. In this paper, we develop a pipeline to
+perform a targeted lensed transient search. We apply this pipeline to 5807
+strong lenses and candidates, identified in the literature, in the DESI Legacy
+Imaging Surveys Data Release 9 (DR9) footprint. For each system, we analyze
+every exposure in all observed bands (DECam $g$, $r$, and $z$). Our pipeline
+finds, groups, and ranks detections that are in sufficient proximity temporally
+and spatially. After the first round of inspection, for promising candidate
+systems, we further examine the newly available DR10 data (with additional $i$
+and $\textrm{Y}$ bands). Here we present our targeted lensed supernova search
+pipeline and seven new lensed supernova candidates, including a very likely
+lensed supernova $-$ probably a Type Ia $-$ in a system with an Einstein radius
+of $\sim 1.5''$."
+astro-ph.CO,"The large-scale structure is a major source of cosmological information.
+However, next-generation photometric galaxy surveys will only provide a
+distorted view of cosmic structures due to large redshift uncertainties. To
+address the need for accurate reconstructions of the large-scale structure in
+presence of photometric uncertainties, we present a framework that constrains
+the three-dimensional dark matter density jointly with galaxy photometric
+redshift probability density functions (PDFs), exploiting information from
+galaxy clustering. Our forward model provides Markov Chain Monte Carlo
+realizations of the primordial and present-day dark matter density, inferred
+jointly from data. Our method goes beyond 2-point statistics via field-level
+inference. It accounts for all observational uncertainties and the survey
+geometry. We showcase our method using mock catalogs that emulate
+next-generation surveys with a worst-case redshift uncertainty, equivalent to
+${\sim}300$ Mpc. On scales $150$ Mpc, we improve the cross-correlation of the
+photometric galaxy positions with the ground truth from $28\%$ to $86\%$. The
+improvement is significant down to $13$ Mpc. On scales $150$ Mpc, we achieve a
+cross-correlation of $80-90\%$ with the ground truth for the dark matter
+density, radial peculiar velocities, tidal shear and gravitational potential."
+astro-ph.CO,"Context: Analyzing the large-scale structure (LSS) with galaxy surveys
+demands accurate structure formation models. Such models should ideally be fast
+and have a clear theoretical framework to rapidly scan a variety of
+cosmological parameter spaces without requiring large training data sets.
+  Aims: This study aims to extend Lagrangian perturbation theory (LPT),
+including viscosity and vorticity, to reproduce the cosmic evolution from dark
+matter N-body calculations at the field level.
+  Methods: We extend Augmented LPT (ALPT) to an Eulerian framework, dubbed
+eALPT. This enables modelling the stress tensor, with this introducing
+vorticity. To compensate that ALPT assumes curl-free fields, a fraction of the
+vorticity, emerging after each Eulerian transformation, is added to the
+subsequent timestep. The model has three free parameters apart from the choice
+of cosmology, redshift snapshots, cosmic volume, and the number of
+particles-cells.
+  Results: We find that the cross-correlation of the dark matter distribution
+as compared to N-body solvers increases at k = 1 h Mpc$^{-1}$ from ~55% with
+the Zel'dovich approximation (~70% with ALPT); to ~96 and 97% with eALPT, and
+power spectra within percentage accuracy up to k~ 0.3 and 0.7 h Mpc$^{-1}$,
+using three and five steps, respectively."
+astro-ph.CO,"We test the smooth dark energy paradigm using Dark Energy Survey (DES) Year 1
+and Year 3 weak lensing and galaxy clustering data. Within the $\Lambda$CDM and
+$w$CDM model we separate the expansion and structure growth history by
+splitting $\Omega_\mathrm{m}$ (and $w$) into two meta-parameters that allow for
+different evolution of growth and geometry in the Universe. We consider three
+different combinations of priors on geometry from CMB, SNIa, BAO, BBN that
+differ in constraining power but have been designed such that the growth
+information comes solely from the DES weak lensing and galaxy clustering. For
+the DES-Y1 data we find no detectable tension between growth and geometry
+meta-parameters in both the $\Lambda$CDM and $w$CDM parameter space. This
+statement also holds for DES-Y3 cosmic shear and 3x2pt analyses. For the
+combination of DES-Y3 galaxy-galaxy lensing and galaxy clustering (2x2pt) we
+measure a tension between our growth and geometry meta-parameters of
+2.6$\sigma$ in the $\Lambda$CDM and 4.48$\sigma$ in the $w$CDM model space,
+respectively. We attribute this tension to residual systematics in the DES-Y3
+RedMagic galaxy sample rather than to new physics. We plan to investigate our
+findings further using alternative lens samples in DES-Y3 and future weak
+lensing and galaxy clustering datasets."
+astro-ph.CO,"Considering possible solutions to the $S_8$ tension between the Planck cosmic
+microwave background (CMB) measurement and low-redshift probes, we extended the
+standard $\Lambda$CDM cosmological model by including decay of dark matter
+(DDM). We first tested the DDM model in which dark matter decays into a form of
+non-interacting dark radiation. Under this DDM model, we investigated the DDM's
+impacts on the Sunyaev Zel'dovich effect by varying the decay lifetime,
+$\Gamma^{-1}$, including the background evolution in cosmology and non-linear
+prescription in the halo mass function. We performed a cosmological analysis
+under the assumption of this extended cosmological model by combining the
+latest high-redshift Planck CMB measurement and low-redshift SZ measurement.
+Our result shows a preference for $\Gamma^{-1} \sim 200$ Gyr with a lower bound
+on the decay lifetime of $\sim$ 77 Gyr at 95\% confidence level. However, the
+CMB data do not prefer this model, and the $S_8$ tension still remains.
+Additionally, we tested the other DDM model in which dark matter decays into
+warm dark matter and dark radiation. This model supports $\Gamma^{-1} \sim 204$
+Gyr to resolve the $S_8$ tension with a lower bound on the decay lifetime of
+$\sim$ 47 Gyr at 95\% confidence level."
+astro-ph.CO,"Photometric redshifts are a key ingredient in the analysis and interpretation
+of large-scale structure (LSS) surveys. The accuracy and precision of these
+redshifts estimates is directly linked to the constraining power of photometric
+surveys. It is hence necessary to define precision and accuracy requirements
+for the redshift calibration to not to infer biased results in the final
+analysis. For weak gravitational lensing of the LSS the photometry culminates
+in the estimation of the source redshift distribution (SRD) in each of the
+tomographic bins used in the analysis. The focus has been on shifts of the mean
+of the SRDs and how well the calibration must be able to recover those. Since
+the estimated SRDs are usually given as a normalized histogram with
+corresponding errors, it would be advantageous to propagate these uncertainties
+accordingly to see whether the requirements of the given survey are indeed
+fulfilled. Here we propose the use of functional derivatives to calculate the
+sensitivity of the final observables, e.g. the lensing angular power spectrum,
+with respect to the SRD at a specific redshift. This allows the propagation of
+arbitrarily shaped small perturbations to the SRD, without having to run the
+whole analysis pipeline for each realization again. We apply our method to a
+EUCLID survey and demonstrate it with SRDs of the KV450 data set, recovering
+previous results. Lastly, we note that for cosmic shear moments of order larger
+than two will probably be not relevant when propagating redshift uncertainties."
+astro-ph.CO,"The discrepancy between Planck data and direct measurements of the current
+expansion rate $H_0$ and the matter fluctuation amplitude $S_8$ has become one
+of the most intriguing puzzles in cosmology nowadays. The $H_0$ tension has
+reached $4.2\sigma$ in the context of standard cosmology i.e $\Lambda$CDM.
+Therefore, explanations to this issue are mandatory to unveil its secrets.
+Despite its success, $\Lambda$CDM is unable to give a satisfying explanation to
+the tension problem. Unless some systematic errors might be hidden in the
+observable measurements, physics beyond the standard model of cosmology must be
+advocated. In this perspective, we study a phantom dynamical dark energy model
+as an alternative to $\Lambda$CDM in order to explain the aforementioned
+issues. This phantom model is characterised by one extra parameter,
+$\Omega_{pdde}$, compared to $\Lambda$CDM. We obtain a strong positive
+correlation between $H_0$ and $\Omega_{pdde}$, for all data combinations. Using
+Planck measurements together with BAO and Pantheon, we find that the $H_0$ and
+the $S_8$ tensions are $3\sigma$ and $2.6\sigma$, respectively. By introducing
+a prior on the absolute magnitude, $M_B$, of the SN Ia, the $H_0$ tension
+decreases to $2.27\sigma$ with $H_0 = 69.76_{-0.82}^{+0.75}$ km s$^{-1}$
+Mpc$^{-1}$ and the $S_8$ tension reaches the value $2.37\sigma$ with $S_8
+=0.8269_{-0.012}^{+0.011}$."
+astro-ph.CO,"We study dark energy cosmological models, extensions of the standard model of
+particles, characterized by having an extra relativistic energy density at very
+early times, and that rapidly dilute after a phase transition occurs. These
+models generate well localized features (or bumps) in the matter power spectrum
+for modes crossing the horizon around and before the phase transition epoch.
+This is because the presence of the additional energy component enhances the
+growth of matter fluctuations during the radiation dominated epoch. Instead of
+considering a particular model, we focus on a parametric family of Gaussian
+bumps in the matter power spectrum, which otherwise would be a $\Lambda$CDM
+one. We study the evolution of such bump cosmologies and their effects in the
+halo mass function and halo power spectrum using N-body simulations, the
+halo-model based HMcode method, and the peak background split framework. The
+bumps are subject to different nonlinear effects that become physically well
+understood, and from them we are able to predict that the most distinctive
+features will show up for intermediate halo masses $10^{12.3} \,h^{-1}M_{\odot}
+< M < 10^{13.6} \,h^{-1}M_{\odot}$. Out of this range, we expect halos are not
+significantly affected regardless of the location of the primordial bump in the
+matter power spectrum. Our analytical results are accurate and in very
+satisfactory agreement with the simulated data."
+astro-ph.CO,"The reported detection of the global 21-cm signal by the EDGES collaboration
+is significantly stronger than standard astrophysical predictions. One possible
+explanation is an early radio excess above the cosmic microwave background.
+Such a radio background could have been produced by high redshift galaxies, if
+they were especially efficient in producing low-frequency synchrotron
+radiation. We have previously studied the effects of such an inhomogeneous
+radio background on the 21-cm signal; however, we made a simplifying assumption
+of isotropy of the background seen by each hydrogen cloud. Here we perform a
+complete calculation that accounts for the fact that the 21-cm absorption
+occurs along the line of sight, and is therefore sensitive to radio sources
+lying behind each absorbing cloud. We find that the complete calculation
+strongly enhances the 21-cm power spectrum during cosmic dawn, by up to two
+orders of magnitude; on the other hand, the effect on the global 21-cm signal
+is only at the $5\%$ level. In addition to making the high-redshift 21-cm
+fluctuations potentially more easily observable, the line of sight radio effect
+induces a new anisotropy in the 21-cm power spectrum. While these effects are
+particularly large for the case of an extremely-enhanced radio efficiency, they
+make it more feasible to detect even a moderately-enhanced radio efficiency in
+early galaxies. This is especially relevant since the EDGES signal has been
+contested by the SARAS experiment."
+q-bio.BM,"Accurate in-silico prediction of conformational B-cell epitopes would lead to
+major improvements in disease diagnostics, drug design and vaccine development.
+A variety of computational methods, mainly based on machine learning
+approaches, have been developed in the last decades to tackle this challenging
+problem. Here, we rigorously benchmarked nine state-of-the-art conformational
+B-cell epitope prediction webservers, including generic and antibody-specific
+methods, on a dataset of over 250 antibody-antigen structures. The results of
+our assessment and statistical analyses show that all the methods achieve very
+low performances, and some do not perform better than randomly generated
+patches of surface residues. In addition, we also found that commonly used
+consensus strategies that combine the results from multiple webservers are at
+best only marginally better than random. Finally, we applied all the predictors
+to the SARS-CoV-2 spike protein as an independent case study, and showed that
+they perform poorly in general, which largely recapitulates our benchmarking
+conclusions. We hope that these results will lead to greater caution when using
+these tools until the biases and issues that limit current methods have been
+addressed, promote the use of state-of-the-art evaluation methodologies in
+future publications, and suggest new strategies to improve the performance of
+conformational B-cell epitope prediction methods."
+q-bio.BM,"Opioid use disorder (OUD) continuously poses major public health challenges
+and social implications worldwide with dramatic rise of opioid dependence
+leading to potential abuse. Despite that a few pharmacological agents have been
+approved for OUD treatment, the efficacy of said agents for OUD requires
+further improvement in order to provide safer and more effective
+pharmacological and psychosocial treatments. Preferable therapeutic treatments
+of OUD rely on the advances in understanding the neurobiological mechanism of
+opioid dependence. Proteins including mu, delta, kappa, nociceptin, and zeta
+opioid receptors are the direct targets of opioids. Each receptor has a large
+protein-protein interaction (PPI) network, that behaves differently when
+subjected to various treatments, thus increasing the complexity in the drug
+development process for an effective opioid addiction treatment. The report
+below analyzes the work by presenting a PPI-network informed machine-learning
+study of OUD. We have examined more than 500 proteins in the five opioid
+receptor networks and subsequently collected 74 inhibitor datasets. Machine
+learning models were constructed by pairing gradient boosting decision tree
+(GBDT) algorithm with two advanced natural language processing (NLP)-based
+molecular fingerprints. With these models, we systematically carried out
+evaluations of screening and repurposing potential of drug candidates for four
+opioid receptors. In addition, absorption, distribution, metabolism, excretion,
+and toxicity (ADMET) properties were also considered in the screening of
+potential drug candidates. Our study can be a valuable and promising tool of
+pharmacological development for OUD treatments."
+q-bio.BM,"Lycopene, rich in red, yellow, or orange-colored fruits and vegetables, is
+the most potent antioxidant among the other carotenoids available in human
+blood plasma. It is evident that regular lycopene intake can prevent chronic
+diseases like cardiovascular diseases, type-2 diabetes, hypertension, kidney
+diseases and cancer. However, thermal processing, light, oxygen, and enzymes in
+gastrointestinal tract (GIT) compromise the bioaccessibility and
+bioavailability of lycopene ingested through diet. Nanoencapsulation provides a
+potential platform to prevent lycopene from light, air oxygen, thermal
+processing and enzymatic activity of the human digestive system.
+Physicochemical properties evidenced to be the potential indicator for
+determining the bioaccessibility of encapsulated bioactive compounds like
+lycopene. By manipulating the size or hydrodynamic diameter, zeta potential
+value or stability, polydispersity index or homogeneity and functional activity
+or retention of antioxidant properties observed to be the most prominent
+physicochemical properties to evaluate beneficial effect of implementation of
+nanotechnology on bioaccessibility study. Moreover, the molecular mechanism of
+the bioavailability of nanoparticles is not yet to be understood due to lack of
+comprehensive design to identify nanoparticles' behaviors if ingested through
+oral route as functional food ingredients. This review paper aims to study and
+leverage existing techniques about how nanotechnology can be used and verified
+to identify the bioaccessibility of lycopene before using it as a functional
+food ingredient for therapeutic treatments."
+q-bio.BM,"The use of biodegradable polymers simplifies the development of therapeutic
+devices with regards to transient implants and three-dimensional platform
+suitable for tissue engineering. Further advances have also occurred in the
+controlled released mechanism of bioactive compounds encapsulated in
+biodegradable polymers. This application requires the understanding of the
+physicochemical properties of the polymeric materials and their inherent impact
+on the delivery of encapsulated bioactive. Hence, the objective of this study
+was to evaluate the effect of surfactant and sonication time on the
+bio-accessibility of lycopene encapsulated polymeric nanoparticles. The
+emulsion evaporation method was used to encapsulate lycopene in poly-lactic
+co-glycolic acid (PLGA) with surfactant concentration, sonication time and
+polymer concentration as independent variables. Physicochemical and
+morphological characteristics were measured with a zetasizer and SEM, while the
+encapsulation efficiency and controlled release kinetics with
+spectrophotometric, and the dialysis method was used to estimate
+bioaccessibility. The results have shown sonication time to have significantly
+(p < 0.05) influenced the encapsulation efficiency. Hence, the sonication time
+of 4 min yield an encapsulation efficiency of 78% and increased to 97% with
+increase sonication time (6 min). Increased sonication time had a decreasing
+effect on the hydrodynamic diameter and stability of the encapsulated
+nanoparticles. The slow release of lycopene was observed during the first 12
+days, followed by a burst release of about 44% on the 13th day in-vitro. The
+study will have significant impact on the manufacturing of functional food with
+encapsulated ingredients and provide an understanding of their inherent control
+release mechanism in the GIT."
+q-bio.BM,"Nanoencapsulation has become a widespread technique to improve the
+bioavailability of bioactive compounds like lycopene. Consumption of lycopene
+rich foods is effective in preventing cancer, diabetes, and cardiovascular
+diseases due to its strong, oxygen-quenching ability. But the functional
+activity of lycopene is compromised by light, oxygen, and heat. A biodegradable
+polymer such as PLA or PLGA is the most effective carrier for encapsulating
+lycopene due to its excellent biodegradability, biocompatibility, and
+nontoxigenic effect on the human metabolic system. Hence, the primary objective
+of this study was to evaluate the effect of pasteurization on bioaccessibility
+and control release kinetics of encapsulated lycopene nanoparticles in invitro
+human GIT. In the first objective, sonication time, surfactant, and polymer
+concentration were considered as the three factors to synthesize polymeric
+lycopene nanoparticles (LNP) whereas in the second objective, type of
+pasteurization, encapsulation, and juice concentration were three factors. In
+Objectives 4 and 5, the type of encapsulation and pasteurization, and digestion
+time were evaluated as the three factors used to evaluate the in-vitro
+bioaccessibility of encapsulated lycopene NP. The study evidenced that
+encapsulation improved the lycopene's bioaccessibility by 70% and more than 60%
+for conventional pasteurized (CP) and microwave pasteurized (MP) nanoemulsions,
+respectively without compromising the physicochemical properties of both PLA
+and PLGA-lycopene nanoparticles. The invitro bioaccessibility study also showed
+that CP reduced the functional activity of PLALNP by 20% whereas MP had no
+significant effect on the bioaccessibility of PLA LNP. It is unlikely that the
+PLGA LNP was more sensitive against MP nanoemulsion than the CP. In conclusion,
+it was shown that the PLA LNP treated with MP provided the highest
+bioaccessibility."
+q-bio.BM,"Glutamate-gated kainate receptors (KARs) are ubiquitous in the central
+nervous system of vertebrates, mediate synaptic transmission on post-synapse,
+and modulate transmitter release on pre-synapse. In the brain, the trafficking,
+gating kinetics, and pharmacology of KARs are tightly regulated by Neuropilin
+and tolloid-like proteins (Netos). Here we report cryo-EM structures of
+homo-tetrameric GluK2 in complex with Neto2 at inhibited and desensitized
+states, illustrating variable stoichiometry of GluK2-Neto2 complexes, with one
+or two Neto2 subunits associate with the GluK2. We find that Neto2 accesses
+only two broad faces of KARs, intermolecularly crosslinking the lower-lobe of
+ATDA/C, upper-lobe of LBDB/D, and lower-lobe of LBDA/C, illustrating how Neto2
+regulates receptor-gating kinetics. The transmembrane helix of Neto2 is
+positioned proximal to the selectivity filter and competes with the amphiphilic
+H1-helix after M4 for interacting with an ICD formed by the M1-M2 linkers of
+the receptor, revealing how rectification is regulated by Neto2."
+q-bio.BM,"Molecular representations are of fundamental importance for the modeling and
+analysis of molecular systems. Representation models and in general approaches
+based on topological data analysis (TDA) have demonstrated great success in
+various steps of drug design and materials discovery. Here we develop a
+mathematically rigorous computational framework for molecular representation
+based on the persistent Dirac operator. The properties of the spectrum of the
+discrete weighted and unweighted Dirac matrices are systemically discussed and
+used to demonstrate the geometric and topological properties of both
+non-homology and homology eigenvectors of real molecular structures. This
+allows us to asses the influence of weighting schemes on the information
+encoded in the Dirac eigenspectrum. A series of physical persistent attributes,
+which characterize the spectrum of the Dirac matrices across a filtration, are
+proposed and used as efficient molecular fingerprints. Finally, our persistent
+Dirac-based model is used for clustering molecular configurations from nine
+types of organic-inorganic halide perovskites. We found that our model can
+cluster the structures very well, demonstrating the representation and
+featurization power of the current approach."
+q-bio.BM,"There are many problems in biochemistry that are difficult to study
+experimentally. Simulation methods are appealing due to direct availability of
+atomic coordinates as a function of time. However, direct molecular simulations
+are challenged by the size of systems and the time scales needed to describe
+relevant motions. In theory, enhanced sampling algorithms can help to overcome
+some of the limitations of molecular simulations. Here, we discuss a problem in
+biochemistry that offers a significant challenge for enhanced sampling methods
+and that could, therefore, serve as a benchmark for comparing approaches that
+use machine learning to find suitable collective variables. More in particular,
+we study the transitions LacI undergoes upon moving between being
+non-specifically and specifically bound to DNA. It is found that many degrees
+of freedom change during this transition and that the transition does not occur
+reversibly in simulations if only a subset of these degrees of freedom are
+biased. We also explain why this problem is so important to biologists and the
+transformative impact that a simulation of it would have on the understanding
+of DNA regulation."
+q-bio.BM,"Lycopene contributes to the red-colored pigmentation of fruits and
+vegetables, and it is a fat-soluble carotenoid with antioxidant properties.
+Epidemiological studies have shown the significant health benefits associated
+to the consumption of lycopene rich foods, because of the anti-cancer
+properties. Degradative losses of lycopene during processing is a grave
+concern, hence encapsulation provides a remedy. The objective of this study is
+to evaluate the encapsulation efficiency of two biodegradable polymers (PLGA
+and PCL) as for controlled release of lycopene in the gastrointestinal (GI)
+system. The nanoparticles (NP) were synthesized by emulsion evaporation method
+and physicochemical properties was determined using a Dynamic Light Scattering
+spectroscopy. The results show the hydrodynamic diameter of the lycopene NP
+synthesized in PCL (200 mg) and 3500 mg surfactant and sonicated for 15 min was
+79.23+0.85 nm (Lowest). PLGA (500 mg) and 500 mg surfactant with 15 min
+sonication was observed to have the lowest NP diameter (108.2+2.66 nm) among
+the others. Significant difference result found in PDI value (0.12+0.07) when
+PCL of 200mg dissolve in 3500 mg of surfactant. On the other hands the zeta
+potential values were much smaller in case of PCL NP ranged between -1.3+0.046
+and -4.21+0.08 mV compared to the PLGA NP -72.36+2.17 to 107.66+3.15 mV in all
+experiments. Thus, NP synthesized with PCL and surfactant provide a smaller
+sized nano-solution than PLGA and surfactant. As the degradation rate for PCL
+is lower than PLGA so PCL can be considered as a potential biodegradable
+polymer than PLGA to encapsulate lycopene."
+q-bio.BM,"Atlantic sea lamprey contains two corticoid receptors (CRs), CR1 and CR2,
+that are identical except for a four amino acid insert (Thr-Arg-Gln-Gly) in the
+CR1 DNA-binding domain (DBD). Steroids are stronger transcriptional activators
+of CR2 than of CR1 suggesting that the insert reduces the transcriptional
+response of lamprey CR1 to steroids. The DBD in elephant shark
+mineralocorticoid receptor (MR) and glucocorticoid receptor (GR), which are
+descended from a CR, lack these four amino acids, suggesting that a CR2 is
+their common ancestor. To determine if, similar to lamprey CR1, the presence of
+this insert in elephant shark MR and GR decreases transcriptional activation by
+corticosteroids, we inserted these four CR1-specific residues into the DBD of
+elephant shark MR and GR. Compared to steroid activation of wild-type elephant
+shark MR and GR, cortisol, corticosterone, aldosterone, 11-deoxycorticosterone
+and 11-deoxycortisol had lower transcriptional activation of these mutant MR
+and GR receptors, indicating that the absence of this four-residue segment in
+the DBD in wild-type elephant shark MR and GR increases transcriptional
+activation by corticosteroids."
+q-bio.BM,"Opioid use disorder (OUD) is a chronic and relapsing condition that involves
+the continued and compulsive use of opioids despite harmful consequences. The
+development of medications with improved efficacy and safety profiles for OUD
+treatment is urgently needed. Drug repurposing is a promising option for drug
+discovery due to its reduced cost and expedited approval procedures.
+Computational approaches based on machine learning enable the rapid screening
+of DrugBank compounds, identifying those with the potential to be repurposed
+for OUD treatment. We collected inhibitor data for four major opioid receptors
+and used advanced machine learning predictors of binding affinity that fuse the
+gradient boosting decision tree algorithm with two natural language processing
+(NLP)-based molecular fingerprints and one traditional 2D fingerprint. Using
+these predictors, we systematically analyzed the binding affinities of DrugBank
+compounds on four opioid receptors. Based on our machine learning predictions,
+we were able to discriminate DrugBank compounds with various binding affinity
+thresholds and selectivities for different receptors. The prediction results
+were further analyzed for ADMET (absorption, distribution, metabolism,
+excretion, and toxicity), which provided guidance on repurposing DrugBank
+compounds for the inhibition of selected opioid receptors. The pharmacological
+effects of these compounds for OUD treatment need to be tested in further
+experimental studies and clinical trials. Our machine learning studies provide
+a valuable platform for drug discovery in the context of OUD treatment."
+q-bio.BM,"The well known phenomenon of phase separation in synthetic polymers and
+proteins has become a major topic in biophysics because it has been invoked as
+a mechanism of compartment formation in cells, without the need for membranes.
+Most of the coacervates (or condensates) are composed of Intrinsically
+Disordered Proteins (IDPs) or regions that are structureless, often in
+interaction with RNA and DNA. One of the more intriguing IDPs is the 526
+residue RNA binding protein, Fused In Sarcoma (FUS), whose monomer
+conformations and condensates exhibit unusual behavior that are sensitive to
+solution conditions. By focussing principally on the N-terminus low complexity
+domain (FUS-LC comprising of residues 1-214) and other truncations, we
+rationalize the findings in solid state NMR experiments, which show that FUS-LC
+adopts a nonpolymorphic fibril (core-1) involving residues 39-95, flanked by
+fuzzy coats on both the N- and C- terminal ends. An alternate structure
+(core-2), whose free energy is comparable to core-1, emerges only in the
+truncated construct (residues 110-214). Both core-1 and core-2 fibrils are
+stabilized by a Tyrosine ladder as well as hydrophilic interactions. The
+morphologies (gels, fibrils, and glass-like behavior) adopted by FUS seem to
+vary greatly, depending on the experimental conditions. The effect of
+phosphorylation is site-specific and affects the stability of the fibril
+depending on the sites that are phosphorylated. Many of the peculiarities
+associated with FUS may also be shared by other IDPs, such as TDP43 and
+hnRNPA2. We outline a number of problems for which there is no clear molecular
+understanding."
+q-bio.BM,"Cell-free protein synthesis (CFPS) systems are an attractive to complement
+the usual cell-based synthesis of proteins, especially for screening
+approaches. The literature describes a wide variety of CFPS systems, but their
+performance is difficult to compare since the reaction components are often
+used at different concentrations. Therefore, we have developed a calculation
+tool based on amino acid balancing to evaluate the performance of CFPS by
+determining the fractional yield as the ratio between theoretically achievable
+and achieved protein molar concentration. This tool was applied to a series of
+experiments from our lab and to various systems described in the literature to
+identify systems that synthesize proteins very efficiently and those that still
+have potential for higher yields. The well-established Escherichia coli system
+showed a high efficiency in the utilization of amino acids, but interestingly,
+less-attention-paid systems, such as the one based on Streptomyces lividans,
+also demonstrated exceptional fractional yields of 100%, meaning complete amino
+acid conversion. The methods and tools described here can quickly identify when
+a system has reached its maximum or has other limitations. We believe that the
+approach described here will facilitate the evaluation and optimization of
+existing CFPS systems and provide the basis for the systematic development of
+new CFPS systems."
+q-bio.BM,"Biomolecular communication demands that interactions between parts of a
+molecular system act as scaffolds for message transmission. It also requires an
+evolving and organized system of signs - a communicative agency - for creating
+and transmitting meaning. Here I explore the need to dissect biomolecular
+communication with retrodiction approaches that make claims about the past
+given information that is available in the present. While the passage of time
+restricts the explanatory power of retrodiction, the use of molecular structure
+in biology offsets information erosion. This allows description of the gradual
+evolutionary rise of structural and functional innovations in RNA and proteins.
+The resulting chronologies can also describe the gradual rise of molecular
+machines of increasing complexity and computation capabilities. For example,
+the accretion of rRNA substructures and ribosomal proteins can be traced in
+time and placed within a geological timescale. Phylogenetic, algorithmic and
+theoretical-inspired accretion models can be reconciled into a congruent
+evolutionary model. Remarkably, the time of origin of enzymes, functional RNA,
+non-ribosomal peptide synthetase (NRPS) complexes, and ribosomes suggest they
+gradually climbed Chomsky's hierarchy of formal grammars, supporting the
+gradual complexification of machines and communication in molecular biology.
+Future retrodiction approaches and in-depth exploration of theoretical models
+of computation will need to confirm such evolutionary progression."
+q-bio.BM,"Understanding the base pairing of an RNA sequence provides insight into its
+molecular structure.By mining suboptimal sampling data, RNAprofiling 1.0
+identifies the dominant helices in low-energy secondary structures as features,
+organizes them into profiles which partition the Boltzmann sample, and
+highlights key similarities/differences among the most informative, i.e.
+selected, profiles in a graphical format. Version 2.0 enhances every step of
+this approach. First, the featured substructures are expanded from helices to
+stems. Second, profile selection includes low-frequency pairings similar to
+featured ones. In conjunction, these updates extend the utility of the method
+to sequences up to length 600, as evaluated over a sizable dataset. Third,
+relationships are visualized in a decision tree which highlights the most
+important structural differences. Finally, this cluster analysis is made
+accessible to experimental researchers in a portable format as an interactive
+webpage, permitting a much greater understanding of trade-offs among different
+possible base pairing combinations."
+q-bio.BM,"The molecular origins of proteins' functions are a combinatorial search
+problem in the proteins' sequence space, which requires enormous resources to
+solve. However, evolution has already solved this optimization problem for us,
+leaving behind suboptimal solutions along the way. Comparing suboptimal
+proteins along the evolutionary pathway, or ancestors, with more optimal modern
+proteins can lead us to the exact molecular origins of a particular function.
+In this paper, we study the long-standing question of the selectivity of
+Imatinib, an anti-cancer kinase inhibitor drug. We study two related kinases,
+Src and Abl, and four of their common ancestors, to which Imatinib has
+significantly different affinities. Our results show that the orientation of
+the N-lobe with respect to the C-lobe varies between the kinases along their
+evolutionary pathway and is consistent with Imatinib's inhibition constants as
+measured experimentally. The conformation of the DFG-motif (Asp-Phe-Gly) and
+the structure of the P-loop also seem to have different stable conformations
+along the evolutionary pathway, which is aligned with Imatinib's affinity."
+q-bio.BM,"Nuclear pore complexes (NPCs) mediate the exchange of materials between the
+nucleoplasm and cytoplasm, playing a key role in the separation of nucleic
+acids and proteins into their required compartments. The static structure of
+the NPC is relatively well defined by recent cryo EM and other studies. The
+functional roles of dynamic components in the pore of the NPC,
+phenylalanyl-glycyl (FG) repeat rich nucleoporins, is less clear because of our
+limited understanding of highly dynamic protein systems. These proteins form a
+restrained concentrate which interacts with and concentrates nuclear transport
+factors (NTRs) to provide facilitated nucleocytoplasmic transport of cargoes.
+Very rapid exchange among FG repeats and NTRs supports extremely fast
+facilitated transport, close to the rate of macromolecular diffusion in
+cytoplasm, while complexes without specific interactions are entropically
+excluded, though details on several aspects of the transport mechanism and FG
+repeat behaviors remain to be resolved. However, as discussed here, new
+technical approaches combined with more advanced modeling methods will likely
+provide an improved dynamic description of NPC transport, potentially at the
+atomic level in the near future. Such advances are likely to be of major
+benefit in comprehending the roles the malfunctioning NPC plays in cancer,
+aging, viral diseases, and neurodegeneration."
+q-bio.BM,"Surface plasmon resonance (SPR)-based biosensors are widely used instruments
+for characterizing molecular interactions. In theory the SPR signal depends
+only on mass changes for interacting molecules of same chemical nature. Whether
+conformational changes of interacting molecules also contribute to the SPR
+signal is still a subject of lively debates. Works have been published claiming
+that conformational changes were detected but all factors contributing to the
+SPR signal were not carefully considered, in addition to often using no or
+improper controls. In the present work we used a very well-characterized
+oligonucleotide, the thrombin-binding DNA aptamer (TBA), which upon binding of
+potassium ions folds into a two G-tetrad antiparallel G-quadruplex structure.
+All terms contributing to the maximal expected SPR response, Rmax, in
+particular the refractive index increment, RII, of both partners and the
+fraction of immobilized TBA target available, ca, were experimentally assessed.
+The resulting Rmax was then compared to the maximal experimental SPR response
+for potassium ions binding to TBA using appropriate controls. Regardless how
+the RIIs were measured, by SPR or refractometry, and how much TBA available for
+interacting with potassium ions was considered, the theoretical and the
+experimental SPR responses never matched, the former being always lower than
+the latter. Using a straightforward experimental model system and by thoroughly
+taking into account all contributing factors we therefore conclude that
+conformational changes can indeed contribute to the measured SPR signal."
+q-bio.BM,"RNA folding prediction remains challenging, but can be also studied using a
+topological mathematical approach. In the present paper, the mathematical
+method to compute the topological classification of RNA structures and based on
+matrix field theory is shortly reviewed, as well as a computational software,
+McGenus, used for topological and folding predictions. Additionally, two types
+of analysis are performed: the prediction results from McGenus are compared
+with topological information extracted from experimentally-determined RNA
+structures, and the topology of RNA structures is investigated for biological
+significance, in both evolutionary and functional terms. Lastly, we advocate
+for more research efforts to be performed at intersection of
+physics-mathematics and biology, and in particular about the possible
+contributions that topology can provide to the study of RNA folding and
+structure."
+q-bio.BM,"In biology, predicting RNA secondary structures plays a vital role in
+determining its physical and chemical properties. Although we have powerful
+energy models to predict them as well as parametric analysis to understand the
+models themselves, the large number of parameters involved makes exploring the
+parameter space and effective fine-tuning complicated at best. The literature
+describes an approach via so-called RNA polytopes and several attempts to
+compute them entirely, but computing explicitly the polytopes is both
+practically and theoretically intractable. In this thesis, we demonstrate how
+to further modify the dynamic programming algorithms used in RNA secondary
+structure prediction, and more generally how to use only supporting functions
+to gather some information about the polytopes without explicit construction.
+We provide the mathematical frameworks with proofs or sketch thereof whenever
+necessary, and carry out some numerical experiments to show that our proposed
+methods are practical even when the number of parameters is large. As it turns
+out, one of our methods provides a solution to another problem in computational
+geometry previously unsolved to our knowledge, and we hope this thesis will
+accommodate future studies in RNA, as well as inspire further researches on the
+potential uses of polytopes' supporting functions in computational geometry."
